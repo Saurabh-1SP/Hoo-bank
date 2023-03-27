@@ -1,5 +1,5 @@
 import React from 'react'
-import { arrowUp, discount, robot } from '../../assets'
+import { discount, robot } from '../../assets'
 import './Header.css'
 
 const Header = () => {
