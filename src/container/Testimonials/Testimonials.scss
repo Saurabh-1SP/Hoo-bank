@@ -1,0 +1,113 @@
+.app__testimonials{
+    flex-direction: column;
+    gap: 4rem;
+
+    @media screen and (max-width:800px) {
+        gap: 2rem;
+    }
+    @media screen and (max-width:450px) {
+        padding: 2rem 0.5rem;
+    }
+}
+
+.app__testimonials-head{
+    h2{
+        flex: 1;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 170%;
+
+        @media screen and (max-width:450px) {
+            font-size: 32px;      
+            line-height: 42px;      
+        }
+    }
+    P{
+        flex: 1;
+    }
+
+    @media screen and (max-width:450px) {
+        flex-direction: column;
+    }
+}
+
+.app__testimonials-comments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    
+    .app__testimonials-comment{
+        max-width: 250px;
+        min-height: 350px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 2rem;
+        border-radius: 20px;
+
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 180%;
+
+            @media screen and (max-width:800px) {
+                font-size: 16px;
+            }
+        }
+
+        .app__testimonials-comment_profile{
+            gap: 1rem;
+
+            img{
+                width: 60px;
+                height:60px;
+
+                @media screen and (max-width: 800px) {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .comment_profile-text{
+                h3{
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+
+                    @media screen and (max-width:800px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    
+                    @media screen and (max-width:800px) {
+                        display: none;                        
+                    }
+                }
+            }
+        }
+
+        &:hover{
+            background: var(--black-gradient);
+            box-shadow: var(--card-shodow);
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        gap: 0rem;
+    }
+    @media screen and (max-width:620px) {
+        flex-direction: column;
+
+        .app__testimonials-comment{
+            gap: 1rem;
+            padding: 2rem;
+            min-height: auto;
+        }
+    }
+}

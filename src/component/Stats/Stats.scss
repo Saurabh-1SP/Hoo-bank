@@ -1,0 +1,38 @@
+.app__stats{
+    padding-top: 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    div{
+        gap: 1rem;
+
+        h2{
+            font-weight: 600;
+            font-size: 30.8925px;
+            line-height: 130%;
+        }
+
+        p{
+            width:max-content;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+        }
+    }
+
+    @media screen and (max-width:650px) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+.bar{
+    background-color: white;
+    height:  13.63px;
+    width: 1px;
+
+    @media screen and (max-width:650px) {
+        width: 30px;
+        height: 1px;
+    }
+}

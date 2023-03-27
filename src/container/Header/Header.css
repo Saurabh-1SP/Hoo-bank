@@ -1,0 +1,89 @@
+.app__header{
+    padding-right: 0;
+}
+.app__header-img{
+    flex: 1;}
+    .app__header-img img{
+        width: 100%;
+    }
+    
+    
+    .app__header-container{
+        flex: 1;
+        flex-direction:column;
+        align-items: flex-start;
+        gap: 2rem;
+        font-size: 18px;}
+        
+        .app__header-container_discount{
+            border-radius: 10px;}
+            
+            .app__header-container p{
+                font-family: var(--font-popins);
+                color: var(--color-dimWhite);
+                padding: 0 0.5rem;
+            }
+            
+            
+            
+            
+            .app__header-container_head{
+                display: flex;
+                flex-direction: column;}
+                .app__header-container_head div{
+                    display: flex;
+                    /* justify-content: center;
+                    align-items: center;} */
+                }
+        .app__header-container_head div div{
+            margin-left: 4rem;
+            margin-bottom: 2rem;
+            border-radius: 100%;
+            border: 2px solid var(--color-secondary);
+            padding: 2rem;}
+            .app__header-container_head div div p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 130%;
+                text-align: center;
+            }
+            .app__header-container_head h2{
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 70px;
+            }
+            .app__header-container_head p{
+                max-width: 450px;
+            }
+        @media screen and (max-width:450px) {
+            .app__header-container{
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                padding: 1rem;
+                flex-direction: column-reverse;
+            }
+            
+            .app__header-container_discount p{
+                font-size: 14px;
+            }
+            .app__header-container_head h2{
+                font-size: 40px;
+                line-height: 50px;
+            }
+    .app__header-container_head div{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .app__header-container_head div div{
+        display: none;
+    }
+}
+@media screen and (max-width:980px) {
+    .app__header{
+        flex-direction: column;
+        padding: 1rem 0rem;
+        padding-left: 0;
+    }
+}
